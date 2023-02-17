@@ -35,7 +35,6 @@ const game = () => {
         const choice = getComputerChoice();
         const result = playRound(mine, choice);
         console.log(result);
-        setTimeout(500);
         if (result === 'WRONG VALUE!') {
             --i;
             continue;
@@ -44,7 +43,6 @@ const game = () => {
         if (i !== 5) {
             console.log(`%cyour score is ${score}`,'font-size: 20px');
         }
-        setTimeout(2000);
     }
     const machinesScore = 5 - score;
     const result = score > machinesScore ? `YOU WIN! ${score} : ${machinesScore}`
