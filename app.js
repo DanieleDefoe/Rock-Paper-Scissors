@@ -19,7 +19,7 @@ const playRound = (mine, his) => {
     return `You win! ${mine} ${mine === 'Scissors' ? 'beat' : 'beats'} ${his}`;
 }
 
-const game = (a) => {
+const game = () => {
     let score = 0;
     for (let i = 1; i <= 5; i++) {
         if (i === 5) {
