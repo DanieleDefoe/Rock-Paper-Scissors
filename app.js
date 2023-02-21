@@ -14,6 +14,7 @@ const output = document.querySelector('.output');
 const popup = document.querySelector('.popup');
 const playAgain = document.querySelector('.play-again');
 const finalResult = document.querySelector('.final-result');
+const finalScore = document.querySelector('.final-score');
 
 play.addEventListener('click', () => {
     play.style.display = 'none';
@@ -64,6 +65,7 @@ const showResult = () => {
     btns.style.display = 'none';
     texts.style.display = 'none';
     popup.style.display = 'block';
+    finalScore.textContent = `FINAL SCORE: ${my} ${him}`;
     if (my == 5) {
         finalResult.textContent = 'YOU WIN!';
         finalResult.style.color = 'green';
