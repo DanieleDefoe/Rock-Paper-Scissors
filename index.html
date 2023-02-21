@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
-</head>
-<body>
-    <script type="module" src="./app.js" async></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./app.js" defer></script>
+    </head>
+    <body class="page">
+        <header class="header">
+            <h1 class="header__title">rock paper scissors</h1>
+        </header>
+        <main class="main">
+            <section class="texts">
+                <p class="score">Score: <span class="user-score">0</span> <span class="computer-score">0</span></p>
+                <p class="result">Your choice: <span class="my-choice"></p>
+                <p class="result">Computer's choice: <span class="his-choice"></span></p>
+                <p class="output"></p>
+            </section>
+            <section class="popup">
+                <p class="final-result"></p>
+                <button class="play-again" type="button">try again</button>
+            </section>
+            <section class="buttons">
+                <button class="play" type="button">play</button>
+                <button type="button" class="button rock" data-name="Rock">
+                    <img src="./images/rock.png" alt="rock" loading="lazy" class="button__image" data-name="Rock">
+                </button>
+                <button type="button" class="button paper" data-name="Paper">
+                    <img src="./images/paper.png" alt="rock" loading="lazy" class="button__image" data-name="Paper">
+                </button>
+                <button type="button" class="button scissors" data-name="Scissors">
+                    <img src="./images/scissors.png" alt="rock" loading="lazy" class="button__image" data-name="Scissors">
+                </button>
+            </section>
+        </main>
+    </body>
 </html>

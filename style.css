@@ -1,0 +1,149 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+.page {
+    font-family: sans-serif;
+    text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(10px);
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 10vh;
+    font-size: 4.5rem;
+}
+
+.header__title {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.main {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+}
+
+.texts {
+    width: 100%;
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+    display: none;
+}
+
+.result {
+    display: inline-block;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.button {
+    width: 250px;
+    height: 250px;
+    padding: 25px;
+    border-radius: 10px;
+    background: none;
+    border: 1px solid lightpink;
+    transition: box-shadow .3s ease-in;
+    display: none;
+}
+
+.button:hover {
+    box-shadow: 0 0 20px 0 lightpink;
+    cursor: pointer;
+}
+
+.button__image {
+    width: 100%;
+    object-fit: contain;
+}
+
+.play {
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    background: none;
+    border: 1px solid lightpink;
+    transition: box-shadow .3s ease-in;
+    border-radius: 10px;
+    font-size: 7em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    position: absolute;
+}
+
+.play:hover {
+    box-shadow: 0 0 20px 0 lightpink;
+    cursor: pointer;
+}
+
+.popup {
+    position: relative;
+    background: rgba(0, 0, 0, .2);
+    width: 70vw;
+    height: 70vh;
+    border-radius: 10px;
+    display: none;
+}
+
+.play-again {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    font-size: 5rem;
+    text-transform: uppercase;
+    background: none;
+    border: 2px solid pink;
+    font-weight: bold;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: #fff;
+}
+
+.play-again:hover {
+    box-shadow: 0 0 20px 0 pink;
+    cursor: pointer;
+}
+
+.final-result {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 5rem;
+}
